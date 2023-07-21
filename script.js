@@ -3,9 +3,10 @@ const splitWords = () => {
   const text = textNode.textContent;
   const newDomElements = text.split(" ").map((text) => {
     const highlighted =
-      text.startsWith(`CSS`) ||
-      text.startsWith(`JAVA`) ||
-      text.startsWith(`HTML`);
+      text.startsWith(`PS1`) ||
+      text.startsWith(`SNES`) ||
+      text.startsWith(`NES`) ||
+      text.startsWith(`N64`);
     return `<span class="word ${
       highlighted ? "highlighted" : null
     }">${text}</span>`;
